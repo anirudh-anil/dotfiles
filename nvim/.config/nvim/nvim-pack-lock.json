@@ -1,0 +1,24 @@
+{
+  "plugins": {
+    "dracula.nvim": {
+      "rev": "ae752c13e95fb7c5f58da4b5123cb804ea7568ee",
+      "src": "https://github.com/mofiqul/dracula.nvim"
+    },
+    "mason.nvim": {
+      "rev": "16ba83bfc8a25f52bb545134f5bee082b195c460",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mini.nvim": {
+      "rev": "b2ac6522f7a54b475d9fad711b938eefc6d3d0a6",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "229b79051b380377664edc4cbd534930154921a1",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "tree-sitter-manager.nvim": {
+      "rev": "97cfa91a6790d07008e5c9a37a605423f4467abc",
+      "src": "https://github.com/romus204/tree-sitter-manager.nvim"
+    }
+  }
+}
