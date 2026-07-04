@@ -68,3 +68,6 @@ style = "Regular"
 bindings = [
 	{ key = "F11", action="ToggleFullscreen" }
 ]
+
+[terminal]
+shell = "/usr/bin/fish"
