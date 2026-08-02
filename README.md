@@ -1,9 +1,13 @@
 # Alacritty
 uses the [dracula](https://github.com/dracula/alacritty) theme for Alacritty
 
+# Kitty
+also uses the [dracula](https://github.com/dracula/kitty) theme.
+
 # mpd and ncmpcpp
 > [!NOTE]
-> additional configurations might be required in order to get things working, such as adding an audio output to the mpd config
+> additional configurations might be required in order to get things working, such as adding an audio output to the mpd config.<br>
+> here I am using PipeWire for audio 
 
 # Neovim
 > [!IMPORTANT]
