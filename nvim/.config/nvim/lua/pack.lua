@@ -78,3 +78,12 @@ require("tree-sitter-manager").setup({
 vim.pack.add({"https://github.com/neovim/nvim-lspconfig"})
 vim.pack.add({"https://github.com/mason-org/mason.nvim"})
 
+
+
+-- Rust
+vim.pack.add {{
+  src = 'https://github.com/mrcjkb/rustaceanvim',
+  -- To avoid being surprised by breaking changes,
+  -- I recommend you set a version range
+  version = vim.version.range('^9')
+}}

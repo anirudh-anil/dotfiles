@@ -3,7 +3,7 @@ if status is-interactive
 end
 set fish_greeting
 set fish_color_command blue
-alias ls="eza -l --icons"
+alias ls="eza -l --icons auto"
 #alias wifi="sudo iw dev wlo1 scan > /dev/zero"
 alias q="exit"
 # alias mpd="toolbox run -c fedora mpd"
@@ -12,3 +12,9 @@ alias c="clear"
 # alias fzf="toolbox run -c fedora fzf"
 # alias wezterm="flatpak run org.wezfurlong.wezterm"
 export EDITOR='nvim'
+
+
+
+zoxide init fish | source
+alias cd='z'
+alias cat='bat'

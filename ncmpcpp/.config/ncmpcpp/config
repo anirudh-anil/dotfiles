@@ -3,5 +3,5 @@ visualizer_output_name = "my_fifo"
 visualizer_in_stereo = "yes"
 #visualizer_type = "wave" (spectrum/wave)
 visualizer_type = "ellipse" (spectrum/wave)
-mpd_host = "~/mpdsocket"
+mpd_host = "~/.config/mpd/mpdsocket"
 mpd_port = 0
