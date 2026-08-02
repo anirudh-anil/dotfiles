@@ -1,0 +1,3 @@
+include dracula.conf
+shell /usr/bin/fish
+map f11 toggle_fullscreen
