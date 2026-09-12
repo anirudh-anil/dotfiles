@@ -1,20 +1,37 @@
+# Commands to run in interactive sessions can go here
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    # No greeting
+    set fish_greeting
+
+    # Use starship
+    function starship_transient_prompt_func
+        starship module character
+    end
+    if test "$TERM" != "linux"
+        starship init fish | source
+        enable_transience
+    end
+    
+    # Colors
+    if test -f ~/.local/state/quickshell/user/generated/terminal/sequences.txt
+        cat ~/.local/state/quickshell/user/generated/terminal/sequences.txt
+    end
+
+    # Aliases
+    # kitty doesn't clear properly so we need to do this weird printing
+    alias clear "printf '\033[2J\033[3J\033[1;1H'"
+    alias c "printf '\033[2J\033[3J\033[1;1H'"
+    alias q exit
+    alias celar "printf '\033[2J\033[3J\033[1;1H'"
+    alias claer "printf '\033[2J\033[3J\033[1;1H'"
+    alias pamcan pacman
+    #alias q 'qs -c ii'
+    if test "$TERM" != "linux"
+        alias ls 'eza --icons=auto -l'
+    end
+    if test "$TERM" = "xterm-kitty"
+        alias ssh 'kitten ssh'
+    end
+    zoxide init fish | source
+    alias cd z
 end
-set fish_greeting
-set fish_color_command blue
-alias ls="eza -l --icons auto"
-#alias wifi="sudo iw dev wlo1 scan > /dev/zero"
-alias q="exit"
-# alias mpd="toolbox run -c fedora mpd"
-alias c="clear"
-# alias task="toolbox run -c fedora task"
-# alias fzf="toolbox run -c fedora fzf"
-# alias wezterm="flatpak run org.wezfurlong.wezterm"
-export EDITOR='nvim'
-
-
-
-zoxide init fish | source
-alias cd='z'
-alias cat='bat'
